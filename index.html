@@ -14,38 +14,38 @@
     </header>
     <section>
         <div>
-            <input id="display" disabled>
+            <input id="display" placeholder="0" disabled>
         </div>
 
         <div>
-            <button type= "button" class= "btn btn-secondary btn-danger" >AC</button>
+            <button type= "button" class= "btn btn-secondary btn-danger" onclick="clearAll ()">AC</button>
             <button type= "button" class= "btn btn-secondary" value="c"> < </button>
-            <button type= "button" class= "btn btn-secondary" >%</button>
-            <button type= "button" class= "btn btn-secondary" >/</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert('%'), operatorCase()" >%</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert('/'), operatorCase()">/</button>
             <br>
 
-            <button type= "button" class= "btn btn-secondary" value="7" >7</button>
-            <button type= "button" class= "btn btn-secondary" value="8">8</button>
-            <button type= "button" class= "btn btn-secondary" value="9">9</button>
-            <button type= "button" class= "btn btn-secondary" >X</button>
+            <button type= "button" class= "btn btn-secondary" value="7" onclick="insert(7)">7</button>
+            <button type= "button" class= "btn btn-secondary" value="8" onclick="insert(8)">8</button>
+            <button type= "button" class= "btn btn-secondary" value="9" onclick="insert(9)">9</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert('*'), operatorCase()">X</button>
             <br>
 
-            <button type= "button" class= "btn btn-secondary" value="4">4</button>
-            <button type= "button" class= "btn btn-secondary" value="5">5</button>
-            <button type= "button" class= "btn btn-secondary" value="6">6</button>
-            <button type= "button" class= "btn btn-secondary" >-</button>
+            <button type= "button" class= "btn btn-secondary" value="4" onclick="insert(4)">4</button>
+            <button type= "button" class= "btn btn-secondary" value="5" onclick="insert(5)">5</button>
+            <button type= "button" class= "btn btn-secondary" value="6" onclick="insert(6)">6</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert('-'), operatorCase()">-</button>
             <br>
 
-            <button type= "button" class= "btn btn-secondary" value="1">1</button>
-            <button type= "button" class= "btn btn-secondary" value="2">2</button>
-            <button type= "button" class= "btn btn-secondary" value="3">3</button>
-            <button type= "button" class= "btn btn-secondary" >+</button>
+            <button type= "button" class= "btn btn-secondary" value="1" onclick="insert(1)">1</button>
+            <button type= "button" class= "btn btn-secondary" value="2" onclick="insert(2)">2</button>
+            <button type= "button" class= "btn btn-secondary" value="3" onclick="insert(3)">3</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert('+'), operatorCase()">+</button>
             <br>
 
-            <button type= "button" class= "btn btn-secondary" > </button>
-            <button type= "button" class= "btn btn-secondary" value="0">0</button>
-            <button type= "button" class= "btn btn-secondary" value=".">.</button>
-            <button type= "button" class= "btn btn-secondary btn-danger" >=</button>
+            <button type= "button" class= "btn btn-secondary" onclick="insert()"> </button>
+            <button type= "button" class= "btn btn-secondary" value="0" onclick="insert(0)">0</button>
+            <button type= "button" class= "btn btn-secondary" value="." onclick="insert('.')">.</button>
+            <button type= "button" class= "btn btn-secondary btn-danger" onclick="calculate (), operatorCase()">=</button>
         </div>
     </section>
 
