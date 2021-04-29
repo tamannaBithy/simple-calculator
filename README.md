@@ -1,3 +1,3 @@
 # simple-calculator
 
-! [screenshot] (image/6.png)
+! .[.]. (image/6.png)
